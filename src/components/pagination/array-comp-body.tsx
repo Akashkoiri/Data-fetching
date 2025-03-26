@@ -20,7 +20,7 @@ export default function ArrayCompBody({ page }: props) {
     );
 
   return (
-    <div className="mt-5 grid grid-cols-1 gap-4">
+    <div className="grid grid-cols-1 gap-4">
       {data
         ? data.map((pokemon, index) => (
             <div key={index}>

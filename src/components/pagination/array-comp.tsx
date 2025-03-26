@@ -10,7 +10,7 @@ export default function ArrayComp() {
   const [page, setPage] = useQueryState("page", parseAsInteger.withDefault(0));
 
   return (
-    <div>
+    <div className="h-full flex flex-col gap-4 p-4 pt-0 overflow-auto ">
       <div className="flex justify-between content-center">
         <BackButton />
         <NavButtons page={page} setPage={setPage} />
